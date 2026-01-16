@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Peserta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Form Pendaftaran Event</h2>
+
+    <p id="statusKuota">Jumlah Peserta: <strong id="jumlahPeserta">0</strong> / 50</p>
+
+    <form id="formDaftar">
+      <input type="text" id="nama" placeholder="Nama Lengkap">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="hp" placeholder="Nomor HP">
+
+      <select id="kategori">
+        <option value="">-- Pilih Kategori --</option>
+        <option value="Mahasiswa">Mahasiswa</option>
+        <option value="Umum">Umum</option>
+      </select>
+
+      <button type="submit">Daftar</button>
+    </form>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+      <p id="modalText"></p>
+      <button onclick="tutupModal()">OK</button>
+      </div>
+    </div>
+
+    <p id="pesan"></p>
+
+    <h3>Daftar Peserta</h3>
+    <div id="listPeserta"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
